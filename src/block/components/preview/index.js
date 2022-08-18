@@ -25,10 +25,10 @@ const BlockPreview = ( { page } ) => {
 		<div className="wrapper">
 			<h2>{ title.rendered }</h2>
 			{ featuredIamge.media_details &&
-				<img src={ featuredIamge.media_details.sizes.large.source_url }
+				<img src={ featuredIamge.source_url }
 					alt={ featuredIamge.title.rendered }
-					width={ featuredIamge.media_details.sizes.large.width }
-					height={ featuredIamge.media_details.sizes.large.height } /> }
+					width={ featuredIamge.media_details.width }
+					height={ featuredIamge.media_details.height } /> }
 			<a href={ link } >{ __( 'Go to page' ) }</a>
 		</div>
 	);
